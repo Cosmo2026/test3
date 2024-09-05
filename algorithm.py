@@ -38,7 +38,6 @@ if __name__ == "__main__":
         param = sys.argv[1]
         print(f"第一个命令行参数是: {param}")
         if param == "BPIC12":
-            # Alpha Miner
             net, im, fm = pm4py.discover_petri_net_inductive(BPIC12, activity_key='concept:name',
                                                              case_id_key='case:concept:name',
                                                              timestamp_key='time:timestamp')
